@@ -67,23 +67,8 @@ async function main() {
       clearCanvas(id);
   }
 
-  const theta = control("theta", {
-    initialValue: 45, onInput: () => {
-    }, onChange: updateAll
-  });
-  const phi = control("phi", {
-    initialValue: 45, onInput: () => {
-    }, onChange: updateAll
-  });
-
-  document.getElementById("theta")?.addEventListener("input", () => {
-    const el = document.getElementById("theta-val");
-    if (el) el.textContent = String(theta.get());
-  });
-  document.getElementById("phi")?.addEventListener("input", () => {
-    const el = document.getElementById("phi-val");
-    if (el) el.textContent = String(phi.get());
-  });
+  const theta = control("theta", {initialValue: 45, onChange: updateAll});
+  const phi = control("phi", {initialValue: 45, onChange: updateAll});
 
   function captureImage() {
     const t = theta.get(), p = phi.get();
