@@ -1,6 +1,6 @@
 # Shape from Shading
 
-**Live demo:** https://galmungral.github.io/shape-from-shading/
+**Live demo:** https://hwenchi.github.io/shape-from-shading/
 
 ## Rhetorical Design
 
